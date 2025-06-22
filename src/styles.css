@@ -1,0 +1,29 @@
+:root {
+  --accent-color: #64ffda;
+  --white-color: #fff;
+  --font-jetbrainsMono: 'JetBrains Mono', monospace;
+  --font-roboto: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0a192f;
+  font-family: var(--font-roboto);
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

@@ -1,0 +1,14 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact",
+    "hireMe": "Hire me"
+  },
+  "home": {
+    "greeting": "Hi, my name is",
+    "role": "Software Engineer",
+    "description": "This portfolio is crafted with brilliant ideas"
+  }
+}

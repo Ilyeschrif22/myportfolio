@@ -1,0 +1,14 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "projects": "Projets",
+    "contact": "Contact",
+    "hireMe": "Engagez-moi"
+  },
+  "home": {
+    "greeting": "Bonjour, je m'appelle",
+    "role": "Ingénieur Logiciel",
+    "description": "Ce portfolio est créé avec des idées brillantes"
+  }
+}

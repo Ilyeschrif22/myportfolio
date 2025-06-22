@@ -1,0 +1,30 @@
+<nav class="navbar">
+  <div class="nav-items">
+    <img class="logo-img" src="1.png" alt="Logo">
+    <ul class="nav-links">
+      <li>
+        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+          <span class="nav-number">01.</span>&nbsp;Home
+        </a>
+      </li>
+      <li>
+        <a routerLink="/about" routerLinkActive="active">
+          <span class="nav-number">02.</span>&nbsp;About
+        </a>
+      </li>
+      <li>
+        <a routerLink="/projects" routerLinkActive="active">
+          <span class="nav-number">03.</span>&nbsp;Projects
+        </a>
+      </li>
+      <li>
+        <a routerLink="/contact" routerLinkActive="active">
+          <span class="nav-number">04.</span>&nbsp;Contact
+        </a>
+      </li>
+    </ul>
+    <a href="assets/resume.pdf" target="_blank" class="resume-button">
+      Resume
+    </a>
+  </div>
+</nav>

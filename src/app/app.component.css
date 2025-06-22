@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&display=swap');
+
+:host {
+  --font-jetbrainsMono: 'JetBrains Mono', monospace;
+  --accent-color: #64ffda;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-jetbrainsMono);
+}
+
+::ng-deep * {
+      
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0a192f;
+  min-height: 100vh;
+}
+
+.app-wrapper {
+  min-height: 100vh;
+  background-color: #0a192f;
+}
+
+.vertical-contact {
+  position: fixed;
+  right: 2em;
+  bottom: -15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.vertical-email {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  color: #fff;
+  font-family: var(--font-jetbrainsMono);
+  font-size: 12px;
+  background-color: transparent;
+  padding: 10px 0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.vertical-white-line {
+  width: 2px;
+  height: 220px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.vertical-email:hover {
+  color: var(--accent-color);
+  transform: translateY(-5px);
+}
+
+.vertical-white-line:hover {
+  background-color: var(--accent-color);
+}
+

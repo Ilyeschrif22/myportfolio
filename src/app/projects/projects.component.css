@@ -1,0 +1,135 @@
+:host {
+  --accent-color: #64ffda;
+  --white-color: #fff;
+  --navy: #112240;
+  --slate: #8892b0;
+}
+
+.projects {
+  min-height: 70vh;
+  padding: 100px 140px 0;
+  max-height: 100vh;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-color) var(--navy);
+}
+
+.projects::-webkit-scrollbar {
+  width: 8px;
+}
+
+.projects::-webkit-scrollbar-track {
+  background: var(--navy);
+}
+
+.projects::-webkit-scrollbar-thumb {
+  background-color: var(--accent-color);
+  border-radius: 4px;
+}
+
+.section-title {
+  color: var(--white-color);
+  font-size: 22.4px;
+  font-weight: 600;
+  margin-bottom: 28px;
+}
+
+.section-title span {
+  color: var(--accent-color);
+  font-family: var(--font-jetbrainsMono);
+  margin-right: 7px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+  margin-top: 35px;
+}
+
+.project-card {
+  position: relative;
+  display: grid;
+  gap: 7px;
+  padding: 2rem;
+  background-color: var(--navy);
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project-overline {
+  color: var(--accent-color);
+  font-family: var(--font-jetbrainsMono);
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.project-title {
+  color: var(--white-color);
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+.project-description {
+  color: var(--slate);
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+.project-tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-top: auto;
+}
+
+.project-tech-list li {
+  color: var(--slate);
+  font-family: var(--font-jetbrainsMono);
+  font-size: 12px;
+}
+
+.project-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.project-links a {
+  color: var(--slate);
+  transition: color 0.2s ease;
+}
+
+.project-links a:hover {
+  color: var(--accent-color);
+}
+
+.project-links svg {
+  margin-top: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .projects {
+    padding: 60px 20px 0;
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
