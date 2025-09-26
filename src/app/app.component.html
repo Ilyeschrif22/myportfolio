@@ -1,7 +1,7 @@
-<div class="app-wrapper">
+<app-loader *ngIf="loading"></app-loader>
+<div class="app-wrapper" [class.blur]="loading">
   <app-navbar></app-navbar>
-  <router-outlet></router-outlet>
-
+  <router-outlet (activate)="hideLoader()"></router-outlet>
   <div class="vertical-contact">
     <div class="vertical-email spaced-email">
       i&nbsp;l&nbsp;y&nbsp;e&nbsp;s&nbsp;.&nbsp;c&nbsp;h&nbsp;r&nbsp;i&nbsp;f&nbsp;&#64;&nbsp;e&nbsp;s&nbsp;p&nbsp;r&nbsp;i&nbsp;t&nbsp;.&nbsp;t&nbsp;n
@@ -9,4 +9,3 @@
     <div class="vertical-white-line"></div>
   </div>
 </div>
-
